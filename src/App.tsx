@@ -28,10 +28,12 @@ const App = () => {
                     path="/devotionals"
                     element={<DevotionalsMainPage />}
                 />
+                {/* TODO: add nested route to devotionals reading page */}
                 <Route
                     path="/prayers"
                     element={<PrayersMainPage />}
                 />
+                {/* TODO: add nested route to prayer reading page */}
                 <Route
                     path="/profile"
                     element={<Profile />}
