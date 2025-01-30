@@ -1,43 +1,43 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&display=swap');
 
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @theme {
-  --color-background1: #f6f4f0;
-  --color-background2: #e3d2ccff;
-  --color-thistle: #d9c5dbff;
-  --color-lilac: #c3aed0ff;
-  --color-finn: #643a71ff;
-  --color-pink: #E98AA5ff;
-  --color-text1: #434143ff;
-  --color-text2: #1B1619ff;
-  --font-title: "Playfair Display", sans;
-  --font-body: "Open Sans", sans-serif;
-  --font-fun: "Familjen Grotesk", sans;
-  --font-handwriting: "Oooh Baby", sans;
+    --color-background1: #f6f4f0;
+    --color-background2: #e3d2ccff;
+    --color-thistle: #d9c5dbff;
+    --color-lilac: #c3aed0ff;
+    --color-finn: #643a71ff;
+    --color-pink: #e98aa5ff;
+    --color-text1: #434143ff;
+    --color-text2: #1b1619ff;
+    --font-title: 'Playfair Display', sans;
+    --font-body: 'Open Sans', sans-serif;
+    --font-fun: 'Familjen Grotesk', sans;
+    --font-handwriting: 'Oooh Baby', sans;
 }
 
-h1, h2, h3 {
-  font-family: "Playfair Display", sans;
-  font-size: var(--text-4xl);
-  color: var(--color-finn);
-  letter-spacing: var(--tracking-widest);
+h1,
+h2,
+h3 {
+    font-family: 'Playfair Display', sans;
+    font-size: var(--text-4xl);
+    color: var(--color-finn);
+    letter-spacing: var(--tracking-widest);
 }
 
 body {
-  font-family: "Open sans", sans-serif;
-  color: var(--color-onyx);
-  font-size: var(--text-base);
+    font-family: 'Open sans', sans-serif;
+    color: var(--color-onyx);
+    font-size: var(--text-base);
 }
 
 .handwriting {
-  font-family: var(--font-handwriting);
-  font-weight: bold;
+    font-family: var(--font-handwriting);
+    font-weight: bold;
 }
 
 .container {
-
 }
