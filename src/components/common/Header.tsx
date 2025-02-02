@@ -1,4 +1,7 @@
 const Header = () => {
+// Use state to track whether the Welcome page is still visible. render Header only after transition to home screen.
+
+
     return (
         <nav className="fixed hidden lg:flex justify-between items-center p-4">
             <h1>Praying Moms</h1>

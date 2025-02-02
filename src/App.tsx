@@ -8,11 +8,13 @@ import Profile from './pages/Profile'
 import Header from './components/common/Header'
 
 const App = () => {
+//use state showWelcome to manage the welcome screen. conditionally render either welcome or home screen.
+
     return (
         <div className="overflow-hidden bg-background1 min-h-screen">
             <Header />
             {/* navigation stays here */}
-            <main className="grid gap-4 grid-cols-[220px,_1fr] h-screen">
+            <main className="grid gap-4 grid-cols-[220px,_1fr] h-screen ">
                 <Routes>
                     <Route
                         path="/"
