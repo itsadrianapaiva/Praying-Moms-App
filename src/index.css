@@ -26,6 +26,7 @@ h3 {
     font-size: var(--text-4xl);
     color: var(--color-finn);
     letter-spacing: var(--tracking-widest);
+    
 }
 
 body {
@@ -40,4 +41,5 @@ body {
 }
 
 .container {
+    @apply max-w-[77.5rem] h-[44.5rem] py-5 mt-20 mx-auto px-5 md:px-10 lg:px-15 xl:max-w-[87.5rem] overflow-hidden;
 }
