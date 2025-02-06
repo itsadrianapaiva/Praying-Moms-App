@@ -1,11 +1,11 @@
-
+import Dashboard from '../components/common/Dashboard'
 
 const Home = () => {
-  return (
-    <div>
-      Home Screen
-    </div>
-  )
+    return (
+        <Dashboard>
+            <h1>Home</h1>
+        </Dashboard>
+    )
 }
 
 export default Home
