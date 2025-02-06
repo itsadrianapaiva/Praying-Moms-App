@@ -1,10 +1,11 @@
+import Dashboard from "../components/common/Dashboard";
 
 
 const PersonalJournal = () => {
   return (
-    <div>
+    <Dashboard>
       Personal journal
-    </div>
+    </Dashboard>
   )
 }
 

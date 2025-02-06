@@ -3,7 +3,7 @@ import Dashboard from '../components/common/Dashboard'
 const Home = () => {
     return (
         <Dashboard>
-            <h1>Home</h1>
+            <h1 className="text-2xl">Home</h1>
         </Dashboard>
     )
 }

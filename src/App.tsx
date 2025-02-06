@@ -52,9 +52,9 @@ const App = () => {
                                 element={
                                     <motion.div
                                         key="home"
-                                        initial={{ opacity: 0 }}
+                                        initial={{ opacity: 0.5 }}
                                         animate={{ opacity: 1 }}
-                                        transition={{ duration: 2 }}>
+                                        transition={{ duration: 1 }}>
                                         <Home />
                                     </motion.div>
                                 }

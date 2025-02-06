@@ -1,10 +1,11 @@
+import Dashboard from "../components/common/Dashboard"
 
 
 const Profile = () => {
   return (
-    <div>
+    <Dashboard>
       Profile
-    </div>
+    </Dashboard>
   )
 }
 
