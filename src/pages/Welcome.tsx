@@ -16,7 +16,7 @@ const Welcome: React.FC<{ loading: boolean }> = ({
     useEffect(() => {
         if (!loading) {
             setTimeout(() => {
-                navigate('/home')
+                navigate('/')
             }, 500) //2s fade out before navigating
         }
     }, [navigate, loading])

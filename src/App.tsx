@@ -1,4 +1,4 @@
-import { Route, Routes, useNavigate } from 'react-router'
+import { Route, Routes } from 'react-router'
 import Welcome from './pages/Welcome'
 import Home from './pages/Home'
 import PersonalJournal from './pages/PersonalJournal'
@@ -11,18 +11,32 @@ import { AnimatePresence, motion } from 'framer-motion'
 
 const App = () => {
     //use state showWelcome to manage the welcome screen. conditionally render either welcome or home screen.
-    const [showWelcome, setShowWelcome] = useState(true)
+    const [showWelcome, setShowWelcome] = useState(() => {
+        //  change it to session Storage instead of localStorage because I need the welcome page to be visible if the user closes the browser
+        return localStorage.getItem("welcomeSeen") !== "true"; // Set true only if first visit
+      });
     const [loading, setLoading] = useState(true)
-    const navigate = useNavigate() //used to change routes
 
     useEffect(() => {
-        setTimeout(() => {
-            setLoading(false) //stop loading animation
+        console.log("useEffect triggered. showWelcome:", showWelcome);
+    
+        if (showWelcome) {  
+            console.log("Showing Welcome screen...");
             setTimeout(() => {
-                setShowWelcome(false) //fade out welcome
-            }, 2000) //wait for fade out animation
-        }, 3000) //initial loading time
-    }, [navigate])
+                console.log("Loading finished.");
+                setLoading(false);
+                setTimeout(() => {
+                    console.log("Hiding Welcome page.");
+                    setShowWelcome(false);
+                    localStorage.setItem("welcomeSeen", "true"); //Save state
+                }, 2000);
+            }, 3000);
+        } else {
+            console.log("Skipping Welcome page.");
+        }
+    }, [showWelcome]);
+    
+
 
     return (
         <div className="overflow-hidden bg-background1 min-h-screen">
@@ -48,7 +62,7 @@ const App = () => {
                             />
                         ) : (
                             <Route
-                                path="/home"
+                                path="/"
                                 element={
                                     <motion.div
                                         key="home"
