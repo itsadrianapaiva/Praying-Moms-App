@@ -39,5 +39,5 @@ body {
 }
 
 .container {
-    @apply max-w-[22rem] h-[44.5rem] py-5 mt-20 mx-5 md:mx-auto px-5 md:px-10 lg:px-15 lg:max-w-[87.5rem] overflow-hidden;
+    @apply max-w-[22rem] mx-auto sm:max-w-[39rem] md:max-w-[45rem] h-[44.5rem] p-5 mt-20 mx-5 lg:max-w-[62rem] md:px-10 lg:px-15 xl:max-w-[100rem] overflow-hidden;
 }
