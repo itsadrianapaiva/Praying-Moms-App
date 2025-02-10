@@ -12,8 +12,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 const App = () => {
     //use state showWelcome to manage the welcome screen. conditionally render either welcome or home screen.
     const [showWelcome, setShowWelcome] = useState(() => {
-        //  change it to session Storage instead of localStorage because I need the welcome page to be visible if the user closes the browser
-        return localStorage.getItem("welcomeSeen") !== "true"; // Set true only if first visit
+        return sessionStorage.getItem("welcomeSeen") !== "true"; // Show welcome page if no session data
       });
     const [loading, setLoading] = useState(true)
 
@@ -28,7 +27,7 @@ const App = () => {
                 setTimeout(() => {
                     console.log("Hiding Welcome page.");
                     setShowWelcome(false);
-                    localStorage.setItem("welcomeSeen", "true"); //Save state
+                    sessionStorage.setItem("welcomeSeen", "true"); //Save state
                 }, 2000);
             }, 3000);
         } else {
