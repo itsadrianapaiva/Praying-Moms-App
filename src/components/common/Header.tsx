@@ -46,7 +46,6 @@ const Header = () => {
 
     return (
         <nav className="fixed -top-12 w-full flex bg-background1">
-            {/* map a list of links + include logo(div < a< img) in the middle */}
             <ul className="hidden lg:flex justify-center items-center gap-24 w-full">
                 {/* Left Links */}
                 <div className="flex gap-6">
@@ -86,6 +85,14 @@ const Header = () => {
                 </div>
             </ul>
 
+            <a href={logoLink?.path}>
+                <img
+                    src={logoLink?.image}
+                    alt="Home"
+                    className="h-32 mix-blend-multiply object-contain lg:hidden my-5 mx-2 md:mx-10"
+                />
+            </a>
+
             {/* Mobile Navigation (Sheet) */}
             <Sheet>
                 <SheetTrigger asChild>
@@ -96,12 +103,12 @@ const Header = () => {
                     </button>
                 </SheetTrigger>
                 <SheetContent className="right-0 bg-background2 p-6">
-                        <img
-                            src={logo}
-                            alt="Praying Moms Logo"
-                            className="w-58 h-auto mx-auto mix-blend-multiply object-contain"
-                        />
-                    <ul className="flex flex-col gap-6 mt-10">
+                    <img
+                        src={logo}
+                        alt="Praying Moms Logo"
+                        className="w-58 h-auto mx-auto mix-blend-multiply object-contain"
+                    />
+                    <ul className="flex flex-col gap-6 mt-10 text-center">
                         {filteredLinks.map((link) => (
                             <li key={link.id}>
                                 <a
