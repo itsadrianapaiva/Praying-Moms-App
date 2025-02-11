@@ -1,9 +1,10 @@
 import Dashboard from '../components/common/Dashboard'
+import PrayerBento from '../components/user-view/BentoBox'
 
 const Home = () => {
     return (
         <Dashboard>
-            <h1 className="text-2xl">Home</h1>
+            <PrayerBento />
         </Dashboard>
     )
 }

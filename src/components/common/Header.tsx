@@ -1,4 +1,4 @@
-import logo from '../../assets/images/logo1.png' // Adjust path based on `Header.tsx` location
+import logo from '../../assets/images/logo1.png'
 import { useState } from 'react'
 import { Menu } from 'lucide-react'
 import { Sheet, SheetTrigger, SheetContent } from '../../components/ui/sheet'
@@ -89,7 +89,7 @@ const Header = () => {
                 <img
                     src={logoLink?.image}
                     alt="Home"
-                    className="h-32 mix-blend-multiply object-contain lg:hidden my-5 mx-2 md:mx-10"
+                    className="h-32 mix-blend-multiply object-contain lg:hidden my-6 mx-2 md:mx-10"
                 />
             </a>
 
