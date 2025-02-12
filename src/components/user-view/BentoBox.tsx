@@ -1,12 +1,12 @@
 import React from 'react';
 import { Search } from 'lucide-react';
 
-interface PrayerBentoProps {
+interface BentoBoxProps {
   prayerOfDay?: string;
   verseOfDay?: string;
 }
 
-const PrayerBento: React.FC<PrayerBentoProps> = ({
+const BentoBox: React.FC<BentoBoxProps> = ({
   prayerOfDay = "Lord, grant me strength and wisdom today...",
   verseOfDay = "For I know the plans I have for you, declares the Lord... - Jeremiah 29:11"
 }) => {
@@ -63,4 +63,4 @@ const PrayerBento: React.FC<PrayerBentoProps> = ({
   );
 };
 
-export default PrayerBento;
+export default BentoBox;
