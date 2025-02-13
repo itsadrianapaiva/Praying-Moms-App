@@ -22,7 +22,7 @@
 h1,
 h2,
 h3 {
-    font-family: 'Playfair Display', sans;
+    
     color: var(--color-finn);
     letter-spacing: var(--tracking-widest);
     
