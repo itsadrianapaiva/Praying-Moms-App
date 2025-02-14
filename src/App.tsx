@@ -37,11 +37,11 @@ const App = () => {
     }, [showWelcome])
 
     return (
-        <div className="overflow-hidden bg-background1 min-h-screen">
+        <div className="bg-background1 min-h-screen overflow-hidden">
             {!showWelcome && <Header />}{' '}
             {/* show header after welcome fades out. */}
             {/* navigation stays here */}
-            <main className="grid gap-4 grid-cols-[220px,_1fr] h-screen ">
+            <main className="grid gap-4 grid-cols-[220px,_1fr] h-screen xl:overflow-hidden">
                 <AnimatePresence mode="wait">
                     <Dashboard showWelcome={showWelcome}>
                         <Routes>

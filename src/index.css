@@ -39,5 +39,28 @@ body {
 }
 
 .container {
-    @apply max-w-[22rem] mx-auto sm:max-w-[39rem] md:max-w-[45rem] h-[44.5rem] p-5 mt-20 mx-5 lg:max-w-[62rem] md:px-10 lg:px-15 xl:max-w-[100rem] overflow-hidden;
+    @apply max-w-[22rem] mx-auto sm:max-w-[39rem] md:max-w-[45rem] h-[42.5rem] lg:h-[44.5rem] p-5 mt-12 mx-5 lg:max-w-[62rem] md:px-10 lg:px-15 xl:max-w-[100rem] xl:overflow-hidden;
 }
+
+.scroll-area {
+    overflow-x: hidden !important;
+    padding-bottom: 2px; /* Gives spacing under scrollbar */
+  }
+  
+  /* Scrollbar Track (Invisible background) */
+  .scroll-area::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Scrollbar Thumb (Draggable part) */
+  .scroll-area::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-left: 2px; /* Moves thumb away from content */
+  }
+  
+  .scroll-area::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  
+  

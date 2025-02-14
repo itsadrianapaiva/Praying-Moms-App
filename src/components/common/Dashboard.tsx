@@ -20,7 +20,7 @@ const Dashboard: React.FC<DashboardProps> = ({ children, showWelcome }) => {
 
             {/* Conditional Background Style for Welcome vs Home */}
             <div
-                className={`container rounded-4xl relative z-10 p-5 transition-all duration-500 ${
+                className={`container rounded-4xl relative overflow-hidden z-10 p-5 transition-all duration-500 ${
                     showWelcome
                         ? "bg-background2 text-black" // **Solid Background for Welcome**
                         : "bg-background2/30 backdrop-blur-lg border-white/20" // **Glassmorphism for Home**
