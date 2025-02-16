@@ -19,8 +19,8 @@ const BentoBox: React.FC<BentoBoxProps> = ({
     })
 
     return (
-        <div className="mx-auto lg:p-2 h-full">
-            <ScrollArea className="scroll-area max-h-[90vh] overflow-y-auto lg:overflow-y-hidden overflow-x-hidden -mr-3 pr-2 md:-mr-6 md:pr-6 lg:-mr-14 lg:pr-10">
+        <div className="mx-auto lg:p-2 h-full lg:h-[90vh] flex flex-col">
+            <ScrollArea className="scroll-area max-h-[90vh] overflow-y-auto xl:overflow-hidden overflow-x-hidden -mr-3 pr-2 md:-mr-6 md:pr-6 lg:-mr-14 lg:pr-10">
                 {/* Welcome Message - Top Section */}
                 <div className="flex justify-between items-center">
                     <h1 className="text-lg flex-nowrap sm:text-2xl lg:text-3xl font-bold mb-2 font-['Oooh_Baby']">
@@ -29,7 +29,7 @@ const BentoBox: React.FC<BentoBoxProps> = ({
                     <span className="text-sm sm:text-lg text-[#434143]">{today}</span>
                 </div>
 
-                <div className="grid grid-cols-1 grid-rows-6 lg:grid-cols-6 gap-4 md:gap-4 lg:gap-4 p-2 pb-30 xl:pb-10">
+                <div className="grid grid-cols-1 grid-rows-[auto] lg:grid-cols-4 xl:grid-cols-6 gap-4 md:gap-4 lg:gap-4 p-2 pb-30 xl:pb-10">
                     {/* Prayer of the Day - Top Section */}
                     <div className="col-span-1 row-span-1 lg:col-span-2 lg:row-span-1 bg-gradient-to-br from-[#f6f4f0] to-[#d9c5db] rounded-3xl p-4 lg:p-6 hover:scale-[1.01] transition-transform">
                         <h2 className="lg:text-xl font-bold uppercase tracking-thin ">
@@ -135,14 +135,14 @@ const BentoBox: React.FC<BentoBoxProps> = ({
                     </div>
 
                     {/* Search Bar - Bottom Section */}
-                    <div className="col-span-1 lg:col-span-4 relative">
+                    <div className="col-span-1 lg:col-span-2 xl:col-span-4 relative">
                         <input
                             type="text"
                             placeholder="Search prayers, verses, or devotionals..."
                             className="w-full p-4 pl-12 rounded-xl border-2 border-[#643a71] focus:outline-none focus:ring-2 focus:ring-[#e98aa5]/60 bg-[#f6f4f0] font-['Open_Sans'] text-sm lg:text-base"
                         />
                         <Search
-                            className="absolute left-4 top-[48%] lg:top-[12%] transform -translate-y-1/2 text-[#643a71]"
+                            className="absolute left-4 top-[48%] transform -translate-y-1/2 text-[#643a71]"
                             size={20}
                         />
                     </div>
