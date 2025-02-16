@@ -20,7 +20,7 @@ const BentoBox: React.FC<BentoBoxProps> = ({
 
     return (
         <div className="mx-auto lg:p-2 h-full">
-            <ScrollArea className="scroll-area max-h-[90vh] overflow-y-auto xl:overflow-y-hidden overflow-x-hidden -mr-3 pr-2 md:-mr-6 md:pr-6 lg:-mr-14 lg:pr-10">
+            <ScrollArea className="scroll-area max-h-[90vh] overflow-y-auto lg:overflow-y-hidden overflow-x-hidden -mr-3 pr-2 md:-mr-6 md:pr-6 lg:-mr-14 lg:pr-10">
                 {/* Welcome Message - Top Section */}
                 <div className="flex justify-between items-center">
                     <h1 className="text-lg flex-nowrap sm:text-2xl lg:text-3xl font-bold mb-2 font-['Oooh_Baby']">
@@ -29,9 +29,9 @@ const BentoBox: React.FC<BentoBoxProps> = ({
                     <span className="text-sm sm:text-lg text-[#434143]">{today}</span>
                 </div>
 
-                <div className="grid grid-cols-1 grid-rows-6 lg:grid-cols-6 lg:grid-rows-6 gap-4 md:gap-4 lg:gap-4 p-2 pb-30 xl:pb-10">
+                <div className="grid grid-cols-1 grid-rows-6 lg:grid-cols-6 gap-4 md:gap-4 lg:gap-4 p-2 pb-30 xl:pb-10">
                     {/* Prayer of the Day - Top Section */}
-                    <div className="col-span-1 row-span-1 lg:col-span-2 lg:row-span-1 bg-gradient-to-br from-[#f6f4f0] to-[#d9c5db] rounded-3xl p-2 lg:p-6 hover:scale-[1.01] transition-transform">
+                    <div className="col-span-1 row-span-1 lg:col-span-2 lg:row-span-1 bg-gradient-to-br from-[#f6f4f0] to-[#d9c5db] rounded-3xl p-4 lg:p-6 hover:scale-[1.01] transition-transform">
                         <h2 className="lg:text-xl font-bold uppercase tracking-thin ">
                             Prayer of the Day
                         </h2>
@@ -41,7 +41,7 @@ const BentoBox: React.FC<BentoBoxProps> = ({
                     </div>
 
                     {/* Prayer Requests */}
-                    <div className="col-span-1 row-span-1 lg:col-span-2 lg:row-span-1 border-2 border-[#643a71]/80 rounded-3xl p-2 lg:p-6 hover:scale-[1.01] transition-transform backdrop-blur-sm hover:backdrop-blur-none">
+                    <div className="col-span-1 row-span-1 lg:col-span-2 lg:row-span-1 border-2 border-[#643a71]/80 rounded-3xl p-4 lg:p-6 hover:scale-[1.01] transition-transform backdrop-blur-sm hover:backdrop-blur-none">
                         <h2 className="lg:text-xl font-bold uppercase tracking-thin">
                             Prayer Requests
                         </h2>
@@ -82,7 +82,7 @@ const BentoBox: React.FC<BentoBoxProps> = ({
                     </div>
 
                     {/* Journal - Center Emphasis */}
-                    <div className="col-span-1 row-span-2 lg:col-span-2 lg:row-span-2 bg-[#c3aed0]/50 rounded-3xl p-2 lg:p-6 hover:scale-[1.01] transition-transform shadow-lg hover:backdrop-blur-none">
+                    <div className="col-span-1 row-span-2 lg:col-span-2 lg:row-span-2 bg-[#c3aed0]/50 rounded-3xl p-4 lg:p-6 hover:scale-[1.01] transition-transform shadow-lg hover:backdrop-blur-none">
                         <h2 className="lg:text-xl font-bold uppercase tracking-thin mb-2">
                             How are you feeling today?
                         </h2>
@@ -115,7 +115,7 @@ const BentoBox: React.FC<BentoBoxProps> = ({
                     </div>
 
                     {/* Verse of the Day - Left Side */}
-                    <div className="col-span-1 row-span-1 lg:col-span-2 lg:row-span-1 border-2 border-[#d9c5db] rounded-3xl p-2 lg:p-6 hover:scale-[1.01] transition-transform backdrop-blur-sm hover:backdrop-blur-none">
+                    <div className="col-span-1 row-span-1 lg:col-span-2 lg:row-span-1 border-2 border-[#d9c5db] rounded-3xl p-4 lg:p-6 hover:scale-[1.01] transition-transform backdrop-blur-sm hover:backdrop-blur-none">
                         <h2 className="lg:text-xl font-bold uppercase tracking-thin">
                             Inspirational Verse
                         </h2>
@@ -142,20 +142,20 @@ const BentoBox: React.FC<BentoBoxProps> = ({
                             className="w-full p-4 pl-12 rounded-xl border-2 border-[#643a71] focus:outline-none focus:ring-2 focus:ring-[#e98aa5]/60 bg-[#f6f4f0] font-['Open_Sans'] text-sm lg:text-base"
                         />
                         <Search
-                            className="absolute left-4 top-[29%] lg:top-[12%] transform -translate-y-1/2 text-[#643a71]"
+                            className="absolute left-4 top-[48%] lg:top-[12%] transform -translate-y-1/2 text-[#643a71]"
                             size={20}
                         />
                     </div>
 
                     {/* Read the Bible & Find Help- Bottom Section */}
-                    <div className="col-span-1 lg:col-span-1">
+                    <div className="col-span-1">
                         <div className="relative p-[2px] rounded-xl bg-gradient-to-r from-[#643a71] to-[#e98aa5]">
                             <button className="w-full p-4 text-[#643a71] bg-[#f6f4f0] rounded-xl font-medium text-sm lg:text-base transition-all hover:bg-[#d9c5db]/10 hover:text-[#f6f4f0]">
                                 Read the Bible
                             </button>
                         </div>
                     </div>
-                    <div className="col-span-1 lg:col-span-1">
+                    <div className="col-span-1">
                         <div className="relative p-[2px] rounded-xl bg-gradient-to-r from-[#643a71] to-[#e98aa5]">
                             <button className="w-full p-4 text-[#643a71] bg-[#f6f4f0] rounded-xl font-medium text-sm lg:text-base transition-all hover:bg-[#d9c5db]/10 hover:text-[#f6f4f0]">
                                 Find help
