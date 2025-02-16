@@ -11,11 +11,17 @@ const BentoBox: React.FC<BentoBoxProps> = ({
     prayerOfDay = 'Lord, grant me strength and wisdom today...',
     verseOfDay = 'For I know the plans I have for you, declares the Lord... - Jeremiah 29:11',
 }) => {
-    const today = new Date().toLocaleDateString('en-US', {
+    const todayFull = new Date().toLocaleDateString('en-US', {
         weekday: 'short',
         year: 'numeric',
         month: 'long',
         day: 'numeric',
+    })
+
+    const todayShort = new Date().toLocaleDateString('en-US', {
+        month: 'short',
+        day: 'numeric',
+        year: 'numeric',
     })
 
     return (
@@ -26,7 +32,12 @@ const BentoBox: React.FC<BentoBoxProps> = ({
                     <h1 className="text-lg flex-nowrap sm:text-2xl lg:text-3xl font-bold mb-2 font-['Oooh_Baby']">
                         Welcome, Mama!
                     </h1>
-                    <span className="text-sm sm:text-lg text-[#434143]">{today}</span>
+                    <span className="text-sm sm:hidden text-[#434143]">
+                        {todayShort}
+                    </span>
+                    <span className="hidden sm:inline text-lg text-[#434143]">
+                        {todayFull}
+                    </span>
                 </div>
 
                 <div className="grid grid-cols-1 grid-rows-[auto] lg:grid-cols-4 xl:grid-cols-6 gap-4 md:gap-4 lg:gap-4 p-2 pb-30 xl:pb-10">
