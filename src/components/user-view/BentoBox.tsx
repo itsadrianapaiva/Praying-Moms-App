@@ -31,7 +31,7 @@ const BentoBox: React.FC<BentoBoxProps> = ({
 
                 <div className="grid grid-cols-1 grid-rows-6 lg:grid-cols-6 lg:grid-rows-6 gap-4 md:gap-4 lg:gap-4 p-2 pb-30 xl:pb-10">
                     {/* Prayer of the Day - Top Section */}
-                    <div className="col-span-1 row-span-1 lg:col-span-2 lg:row-span-1 bg-gradient-to-br from-[#f6f4f0] to-[#d9c5db] rounded-3xl p-2 lg:p-6 hover:scale-[1.02] transition-transform">
+                    <div className="col-span-1 row-span-1 lg:col-span-2 lg:row-span-1 bg-gradient-to-br from-[#f6f4f0] to-[#d9c5db] rounded-3xl p-2 lg:p-6 hover:scale-[1.01] transition-transform">
                         <h2 className="lg:text-xl font-bold uppercase tracking-thin ">
                             Prayer of the Day
                         </h2>
@@ -41,7 +41,7 @@ const BentoBox: React.FC<BentoBoxProps> = ({
                     </div>
 
                     {/* Prayer Requests */}
-                    <div className="col-span-1 row-span-1 lg:col-span-2 lg:row-span-1 border-2 border-[#643a71]/80 rounded-3xl p-2 lg:p-6 hover:scale-[1.02] transition-transform backdrop-blur-sm">
+                    <div className="col-span-1 row-span-1 lg:col-span-2 lg:row-span-1 border-2 border-[#643a71]/80 rounded-3xl p-2 lg:p-6 hover:scale-[1.01] transition-transform backdrop-blur-sm hover:backdrop-blur-none">
                         <h2 className="lg:text-xl font-bold uppercase tracking-thin">
                             Prayer Requests
                         </h2>
@@ -82,7 +82,7 @@ const BentoBox: React.FC<BentoBoxProps> = ({
                     </div>
 
                     {/* Journal - Center Emphasis */}
-                    <div className="col-span-1 row-span-2 lg:col-span-2 lg:row-span-2 bg-[#c3aed0]/50 rounded-3xl p-2 lg:p-6 hover:scale-[1.02] transition-transform shadow-lg">
+                    <div className="col-span-1 row-span-2 lg:col-span-2 lg:row-span-2 bg-[#c3aed0]/50 rounded-3xl p-2 lg:p-6 hover:scale-[1.01] transition-transform shadow-lg hover:backdrop-blur-none">
                         <h2 className="lg:text-xl font-bold uppercase tracking-thin mb-2">
                             How are you feeling today?
                         </h2>
@@ -115,7 +115,7 @@ const BentoBox: React.FC<BentoBoxProps> = ({
                     </div>
 
                     {/* Verse of the Day - Left Side */}
-                    <div className="col-span-1 row-span-1 lg:col-span-2 lg:row-span-1 border-2 border-[#d9c5db] rounded-3xl p-2 lg:p-6 hover:scale-[1.02] transition-transform backdrop-blur-sm">
+                    <div className="col-span-1 row-span-1 lg:col-span-2 lg:row-span-1 border-2 border-[#d9c5db] rounded-3xl p-2 lg:p-6 hover:scale-[1.01] transition-transform backdrop-blur-sm hover:backdrop-blur-none">
                         <h2 className="lg:text-xl font-bold uppercase tracking-thin">
                             Inspirational Verse
                         </h2>
